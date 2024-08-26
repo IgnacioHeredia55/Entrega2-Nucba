@@ -1,12 +1,23 @@
+/*============== FUENTE ===================*/
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*============== BG-COLORS ===================*/
+:root {
+  --nav-bg: #696969;
+  --primary: #778899;
+  --secondary: #a0522d;
+  --text-white: #fafafa;
+}
+/*============== RESET ===================*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/*============== BARRA-NAV ===================*/
 header {
-  background-color: dimgrey;
+  background-color: var(--nav-bg);
   display: flex;
   justify-content: space-between;
   height: 8vh;
@@ -44,4 +55,98 @@ nav {
   color: white;
   font-family: "Montserrat";
   text-decoration: none;
+}
+/*============== MAIN ===================*/
+main {
+  background-color: var(--primary);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*============== HERO SECTION ===================*/
+#hero {
+  width: 100%;
+  padding: 30px;
+  max-height: 500px;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#hero img {
+  aspect-ratio: 1/1;
+  width: 400px;
+}
+
+/*============== HERO-INFO  ===================*/
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  width: 40%;
+}
+
+.slogan {
+  font-family: "Montserrat";
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.hero-info-desc {
+  color: var(--text-white);
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Montserrat";
+}
+
+.btns-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.btn {
+  font-weight: 800;
+  background-color: transparent;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.b {
+  border: none;
+  color: var(--primary);
+  background-color: black;
+}
+.w {
+  border: solid black 3px;
+}
+
+/*====================== ABOUT SECTION ======================= */
+#about {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  max-height: 500px;
+  max-width: 1400px;
+}
+
+.about-ttl {
+  font-family: "Montserrat";
+
+  font-weight: 800;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.about-desc {
+  width: 70%;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
 }
