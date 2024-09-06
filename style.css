@@ -150,3 +150,63 @@ main {
   font-weight: 400;
   font-size: 18px;
 }
+/* 
+=============================CARDS============================ */
+#info {
+  max-height: 500px;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.info-h3 {
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.info_cards_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.info_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 20px;
+  width: 300px;
+  height: 350px;
+  background-color: var(--nav-bg);
+  border-radius: 1rem;
+}
+
+.info_card-img {
+  aspect-ratio: 1/1;
+  height: 70px;
+  width: 70px;
+}
+
+.info_card-title {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-white);
+}
+
+.info_card-p {
+  font-family: "Montserrat";
+}
