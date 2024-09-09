@@ -17,6 +17,8 @@
 }
 /*============== BARRA-NAV ===================*/
 header {
+  width: 100%;
+  position: fixed;
   background-color: var(--nav-bg);
   display: flex;
   justify-content: space-between;
@@ -67,6 +69,7 @@ main {
 
 /*============== HERO SECTION ===================*/
 #hero {
+  margin-top: 6rem;
   width: 100%;
   padding: 30px;
   max-height: 500px;
@@ -112,6 +115,7 @@ main {
   background-color: transparent;
   padding: 10px 15px;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .b {
@@ -209,4 +213,85 @@ main {
 
 .info_card-p {
   font-family: "Montserrat";
+}
+
+#contacto {
+  max-height: 500px;
+  max-width: 1400px;
+  margin-top: 4rem;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto-title {
+  font-family: "Montserrat";
+  font-size: 35px;
+}
+
+.contact-img {
+  width: 40%;
+}
+
+.contact_info {
+  background-color: var(--nav-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  border-radius: 2rem;
+}
+
+.contact_info-card {
+  background-color: var(--secondary);
+  border-radius: 1rem;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.contact_info-card h5 {
+  color: var(--text-white);
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.contact_info-card a {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #696969;
+  text-decoration: none;
+  color: var(--text-white);
+  text-align: start;
+}
+
+.contact_info-card span {
+  background-color: var(--text-white);
+  color: black;
+  border-radius: 2px;
+  font-weight: 700;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--secondary);
+  align-items: center;
+}
+
+.footer-img {
+  width: 100px;
+  padding: 10px 30px;
+}
+
+.footer-copyright {
+  padding-right: 25px;
+  text-decoration: underline;
 }
